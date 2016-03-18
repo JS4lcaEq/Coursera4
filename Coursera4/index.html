@@ -31,7 +31,7 @@
     <![endif]-->
 </head>
 
-<body>
+<body ng-controller="MainCtrl as ctrl">
 
     <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
@@ -62,6 +62,10 @@
         </div>
 
     </div><!-- /.container -->
+<pre>
+{{ctrl.test}}
+</pre>
+    
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
@@ -70,5 +74,12 @@
     <script src="Scripts/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="Scripts/ie10-viewport-bug-workaround.js"></script>
+    <script src="Scripts/angular.min.js"></script>
+    <script src="Scripts/angular-route.min.js"></script>
+    <script src="app/app.js"></script>
+    <script src="app/route.js"></script>
+    <script src="app/component.js"></script>
+    <script src="app/treeService.js"></script>
+    <script>angular.bootstrap("html", ['app']);</script>
 </body>
 </html>
