@@ -10,6 +10,8 @@ angular.module('app', ['ngRoute']);
         this.current = false;
         this.images = [
             { p: "av_h_s1.jpg", v: "27S.jpg" },
+            { p: "11S_.jpg", v: "11S.jpg" },
+            { p: "28S_.jpg", v: "28S.jpg" },
             { p: "9S_.jpg", v: "9S.jpg" }
         ];
         this.open = function (item) {
