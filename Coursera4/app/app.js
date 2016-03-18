@@ -7,6 +7,10 @@ angular.module('app', ['ngRoute']);
         this.test = "test";
         this.location = $location;
         this.route = $route;
+        this.images = [
+            { p: "av_h_s1.jpg", v: "27S.jpg" },
+            { p: "9S_.jpg", v: "9S.jpg" }
+        ];
     }
 
     angular.module('app').controller('MainCtrl', MainCtrl);

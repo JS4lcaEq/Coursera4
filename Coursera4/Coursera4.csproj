@@ -70,6 +70,10 @@
     <Content Include="app\component.js" />
     <Content Include="app\route.js" />
     <Content Include="app\treeService.js" />
+    <Content Include="images\27S.jpg" />
+    <Content Include="images\9S.jpg" />
+    <Content Include="images\9S_.jpg" />
+    <Content Include="images\av_h_s1.jpg" />
     <Content Include="packages.config" />
     <Content Include="Scripts\jquery-1.9.1.min.map" />
     <None Include="Web.Debug.config">
@@ -148,6 +152,9 @@
     <Content Include="Scripts\ie8-responsive-file-warning.js" />
     <Content Include="Scripts\jquery-1.9.1.js" />
     <Content Include="Scripts\jquery-1.9.1.min.js" />
+    <Content Include="templates\about.html" />
+    <Content Include="templates\help.html" />
+    <Content Include="templates\home.html" />
     <Content Include="Web.config" />
     <Content Include="Scripts\version.json" />
   </ItemGroup>

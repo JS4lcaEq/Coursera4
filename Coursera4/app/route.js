@@ -2,21 +2,21 @@
 
     $routeProvider
 
-        .when('/default', {
-            template: '<div>default: [{{$resolve.name}}]</div>'
+        .when('/home', {
+            templateUrl: 'templates/home.html'
             , resolve: { name: function ($http) { return "return"; } }
             , custom: "customVal"
         })
 
-        .when('/home', {
-            template: '<div>home</div>'
+        .when('/about', {
+            templateUrl: 'templates/about.html'
             //, resolve:{name:"route"}
         })
 
-        .when('/Book/Moby', {
-            template: '<div>/Book/Moby</div>'
+        .when('/help', {
+            templateUrl: 'templates/help.html'
             //, resolve:{name:"route"}
         })
 
-        .otherwise('/default');
+        .otherwise('/home');
 });
