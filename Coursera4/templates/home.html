@@ -1,11 +1,19 @@
-﻿<div class="container-fluid">
-    <div class="row">
+﻿<div ng-if="ctrl.current">
 
-        <div class="col-xs-6 col-sm-3 col-md-2 " ng-repeat="item in ctrl.images">
-            <img src="images/{{item.p}}" alt="..." class="img-thumbnail" />
-        </div>
+    <img src="images/{{ctrl.current.v}}" alt="..." class="img-thumbnail" ng-click="ctrl.close()" 
+         style="position:absolute; top:5px; z-index:10000; max-height:99vh; max-width:90vw;" />
 
-
-    </div>
 </div>
+<div class="container-fluid">
+
+    <div class="row">
+        <div class="col-xs-6 col-sm-3 col-md-2 " ng-repeat="item in ctrl.images">
+            <img src="images/{{item.p}}" alt="..." class="img-thumbnail" ng-click="ctrl.open(item)" />
+        </div>
+    </div>
+
+
+
+</div>
+
 
