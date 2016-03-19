@@ -4,21 +4,23 @@ html, body {
 }
 
 footer {
-    margin-top:-6em;
+    margin-top:-80px;
     clear:both;
     text-align:center;
 }
 
-.starter-template {
+/*.starter-template {
     padding-top: 1em;
-}
+}*/
 
 .gallery-box > div {
     margin: 1em 0;
 }
 
 #ng-view-box {
-    padding-top:50px; 
+    /*padding-top:50px;*/ 
+    /*background-color:antiquewhite;*/
+    /*margin-bottom:50px;*/
 }
 
 #big-box {
