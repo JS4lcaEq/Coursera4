@@ -1,5 +1,6 @@
 html, body {
     height:100%;
+    width:100%;
 }
 
 footer {
@@ -22,25 +23,23 @@ footer {
 
 #big-box {
     min-height: 100%;
+    /*background-color:antiquewhite;*/
 }
 
 #view-image-box {
+    width:100%;
+    height:100%;
     position: fixed;
-    left: 50%;
+    /*background-color:azure;*/
     top: 1px;
     z-index: 2000;
     
 }
 
     #view-image-box img {
-        margin-left: -50%;
-        /*max-height:100vw;
-        max-width: 100vw;
-        width: auto;*/
+        margin:auto;
+        display:block;
+        max-height:100%;
+        max-width: 100%;
     }
     
-/*@media screen and (orientation: landscape) { 
-    #view-image-box img {
-        max-height:100vh;
-    }
-}*/

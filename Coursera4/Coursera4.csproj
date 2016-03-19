@@ -83,6 +83,7 @@
     <Content Include="images\9S.jpg" />
     <Content Include="images\9S_.jpg" />
     <Content Include="images\av_h_s1.jpg" />
+    <Content Include="galery.html" />
     <Content Include="packages.config" />
     <Content Include="Scripts\jquery-1.9.1.min.map" />
     <None Include="Web.Debug.config">

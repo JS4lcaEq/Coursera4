@@ -34,7 +34,7 @@ angular.module('app', ['ngRoute']);
     angular.module('app').controller('MainCtrl', MainCtrl);
 
 })();
-
+//style="max-width:{{ctrl.current.maxWidth}}px; max-height:{{ctrl.current.maxHeight}}px;"
 angular.module('app').config(function ($routeProvider) {
 
     $routeProvider
@@ -42,7 +42,7 @@ angular.module('app').config(function ($routeProvider) {
         .when('/home', {
             template:
 '<div id="view-image-box" ng-if="ctrl.current" >' +
-    '<img src="{{ctrl.current.v}}" alt="big view" ng-click="ctrl.close()" title="click me" style="max-width:{{ctrl.current.maxWidth}}px; max-height:{{ctrl.current.maxHeight}}px;" />' +
+    '<img src="{{ctrl.current.v}}" alt="big view" ng-click="ctrl.close()" title="click me"/>' +
 '</div>'+
 '<div class="container-fluid">'+
     '<div class="row gallery-box">'+
