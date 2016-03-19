@@ -13,6 +13,7 @@ angular.module('app', ['ngRoute']);
             { p: "images/11S_.jpg", v: "images/11S.jpg" },
             { p: "images/16S_.jpg", v: "images/16S.jpg" },
             { p: "images/28S_.jpg", v: "images/28S.jpg" },
+            { p: "images/29S_.jpg", v: "images/29S.jpg" },
             { p: "images/3S_.jpg", v: "images/3S.jpg" },
             { p: "images/4S_.jpg", v: "images/4S.jpg" },
             { p: "images/9S_.jpg", v: "images/9S.jpg" }
