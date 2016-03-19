@@ -20,6 +20,7 @@ angular.module('app', ['ngRoute']);
         ];
         this.open = function (item) {
             var self = this;
+            alert("w:" + $("html").width() + " h:" + $("html").height());
             self.current = item;
         };
         this.close = function () {
