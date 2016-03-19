@@ -20,8 +20,9 @@ angular.module('app', ['ngRoute']);
         ];
         this.open = function (item) {
             var self = this;
-            alert("w:" + $("html").width() + " h:" + $("html").height());
             self.current = item;
+            self.current.maxWidth = $("html").width();
+            self.current.maxHeight = $("html").height();           
         };
         this.close = function () {
             var self = this;
@@ -41,7 +42,7 @@ angular.module('app').config(function ($routeProvider) {
         .when('/home', {
             template:
 '<div id="view-image-box" ng-if="ctrl.current" >' +
-    '<img src="{{ctrl.current.v}}" alt="big view" ng-click="ctrl.close()" title="click me" />'+
+    '<img src="{{ctrl.current.v}}" alt="big view" ng-click="ctrl.close()" title="click me" style="max-width:{{ctrl.current.maxWidth}}px; max-height:{{ctrl.current.maxHeight}}px;" />' +
 '</div>'+
 '<div class="container-fluid">'+
     '<div class="row gallery-box">'+
