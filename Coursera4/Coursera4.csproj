@@ -72,9 +72,15 @@
     <Content Include="app\treeService.js" />
     <Content Include="images\11S.jpg" />
     <Content Include="images\11S_.jpg" />
+    <Content Include="images\16S.jpg" />
+    <Content Include="images\16S_.jpg" />
     <Content Include="images\27S.jpg" />
     <Content Include="images\28S.jpg" />
     <Content Include="images\28S_.jpg" />
+    <Content Include="images\3S.jpg" />
+    <Content Include="images\3S_.jpg" />
+    <Content Include="images\4S.jpg" />
+    <Content Include="images\4S_.jpg" />
     <Content Include="images\9S.jpg" />
     <Content Include="images\9S_.jpg" />
     <Content Include="images\av_h_s1.jpg" />

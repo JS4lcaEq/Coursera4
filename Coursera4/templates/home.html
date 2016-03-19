@@ -1,19 +1,14 @@
-﻿<div ng-if="ctrl.current">
+﻿<div id="view-image-box" ng-if="ctrl.current" >
 
-    <img src="images/{{ctrl.current.v}}" alt="..." class="img-thumbnail" ng-click="ctrl.close()" 
-         style="position:absolute; top:5px; z-index:10000; max-height:99vh; max-width:90vw;" />
+    <img src="images/{{ctrl.current.v}}" alt="big view" class="img-responsive" ng-click="ctrl.close()" title="click me" />
 
 </div>
 <div class="container-fluid">
-
-    <div class="row">
+    <div class="row gallery-box">
         <div class="col-xs-6 col-sm-3 col-md-2 " ng-repeat="item in ctrl.images">
-            <img src="images/{{item.p}}" alt="..." class="img-thumbnail" ng-click="ctrl.open(item)" />
+            <img src="images/{{item.p}}" alt="preview" class="img-thumbnail" ng-click="ctrl.open(item)" title="click me" />
         </div>
     </div>
-
-
-
 </div>
 
 

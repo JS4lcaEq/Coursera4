@@ -11,7 +11,10 @@ angular.module('app', ['ngRoute']);
         this.images = [
             { p: "av_h_s1.jpg", v: "27S.jpg" },
             { p: "11S_.jpg", v: "11S.jpg" },
+            { p: "16S_.jpg", v: "16S.jpg" },
             { p: "28S_.jpg", v: "28S.jpg" },
+            { p: "3S_.jpg", v: "3S.jpg" },
+            { p: "4S_.jpg", v: "4S.jpg" },
             { p: "9S_.jpg", v: "9S.jpg" }
         ];
         this.open = function (item) {

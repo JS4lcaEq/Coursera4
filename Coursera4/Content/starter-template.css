@@ -1,9 +1,37 @@
-body {
-  padding-top: 50px;
+
+footer {
+    margin-top:-6em;
+    clear:both;
+    text-align:center;
 }
+
 .starter-template {
-  padding-top: 1em;
-
+    padding-top: 1em;
 }
 
+.gallery-box > div {
+    margin: 1em 0;
+}
 
+#ng-view-box {
+    padding-top:50px; 
+}
+
+#big-box {
+    min-height: 100vh;
+}
+
+#view-image-box {
+    position: absolute;
+    left: 50%;
+    top: 1px;
+    z-index: 10000;
+    max-width: 99vw;
+    
+}
+
+    #view-image-box img {
+        margin-left: -50%;
+        max-height: 98vh;
+    }
+    
