@@ -41,8 +41,8 @@ angular.module('app').config(function ($routeProvider) {
 
         .when('/home', {
             template:
-'<div id="view-image-box" ng-if="ctrl.current" >' +
-    '<img src="{{ctrl.current.v}}" alt="big view" ng-click="ctrl.close()" title="click me"/>' +
+'<div id="view-image-box" ng-click="ctrl.close()" ng-if="ctrl.current" >' +
+    '<img src="{{ctrl.current.v}}" alt="big view" title="click me"/>' +
 '</div>'+
 '<div class="container-fluid">'+
     '<div class="row gallery-box">'+
