@@ -3,23 +3,11 @@ angular.module('app', ['ngRoute']);
 
 (function () {
 
-    function _multiple(arr) {
-        var temp = [];
-        for (var i = 0; i < arr.length; i++) {
-            temp.push({ p: arr[i].p, v: arr[i].v });
-        }
-        console.log(temp);
-        for (var i = 0; i < temp.length; i++) {
-            arr.push(temp[i]);
-        }
-        console.log(arr);
-    }
-
     function MainCtrl($route, $routeParams, $location) {
+
+        // Base URL for images
         this.base = "http://js4lcaeq.github.io/Coursera4/Coursera4/images/";
-        this.location = $location;
-        this.route = $route;
-        this.current = false;
+        // Images array: p - preview image name, v - original image name
         this.images = [
             { p: "av_h_s1.jpg", v: "27S.jpg" },
             { p: "11S_.jpg", v: "11S.jpg" },
@@ -30,6 +18,11 @@ angular.module('app', ['ngRoute']);
             { p: "4S_.jpg", v: "4S.jpg" },
             { p: "9S_.jpg", v: "9S.jpg" }
         ];
+
+        this.location = $location;
+        this.route = $route;
+        this.current = false;
+
 
         this.open = function (item) {
             var self = this;
@@ -50,7 +43,7 @@ angular.module('app', ['ngRoute']);
             .when('/home', {
                 template:
 '<div ng-if="ctrl.current"  id="view-image-box" ng-click="ctrl.close()">' +
-'  <img ng-if="ctrl.current"  ng-src="{{ctrl.base}}{{ctrl.current}}" alt="big view" title="click me"/>' +
+'  <img ng-src="{{ctrl.base}}{{ctrl.current}}" alt="big view" title="click me"/>' +
 '</div>' +
 '<div class="container-fluid">' +
 '  <div class="row gallery-box">' +

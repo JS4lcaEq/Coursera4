@@ -9,23 +9,14 @@ footer {
     text-align:center;
 }
 
-/*.starter-template {
-    padding-top: 1em;
-}*/
 
 .gallery-box > div {
     margin: 1em 0;
 }
 
-#ng-view-box {
-    /*padding-top:50px;*/ 
-    /*background-color:antiquewhite;*/
-    /*margin-bottom:50px;*/
-}
 
 #big-box {
     min-height: 100%;
-    /*background-color:antiquewhite;*/
 }
 
 #view-image-box {
